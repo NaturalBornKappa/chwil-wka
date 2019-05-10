@@ -1,0 +1,6 @@
+1. SELECT count(*) AS ilosc_rekordow FROM kontrahenci;
+2. SELECT nazwa FROM kontrahenci WHERE kontrahenci.kod_pocztowy = miasta.kod_pocztowy AND kod_pocztowy LIKE "00-___";
+3. SELECT wojewodztwo FROM wojewodztwa WHERE wojewodztwa.kod_w = miasta.kod_w HAVING miasta.miasto NOT LIKE "Warszawa";
+4. SELECT miasto, COUNT(*) AS ilosc_kontrahentow FROM miasta GROUP BY miasto;
+5. SELECT wojewodztwo, COUNT(*) AS ilosc_kontrahentow FROM wojewodztwa WHERE wojewodztwa.kod_w IN (SELECT kod.w FROM miasta WHERE miasta.kod_pocztowy IN (SELECT kod_pocztowy FROM kontrahenci) GROUP BY wojewodztwo;
+6. SELECT wojewodztwo, COUNT(*) AS ilosc_miast FROM wojewodztwa
