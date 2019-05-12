@@ -3,4 +3,6 @@
 
 int losowanie_2();
 
-void wyœwietl(Pojemnik tab[]);
+void wyswietl(Pojemnik tab[]);
+
+int isempty(int tab[]);

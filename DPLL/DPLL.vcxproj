@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{72143EE7-086B-4779-B338-B2B8CC71AE90}</ProjectGuid>
+    <ProjectGuid>{C023741E-E584-4817-92B3-D816C5434645}</ProjectGuid>
     <RootNamespace>DPLL</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -118,13 +118,21 @@
     <ClCompile Include="DPLL.cpp" />
     <ClCompile Include="funkcje.cpp" />
     <ClCompile Include="generuj.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="para.cpp" />
+    <ClCompile Include="podmianka.cpp" />
     <ClCompile Include="pojemnik.cpp" />
+    <ClCompile Include="zliczanie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="biblioteki.h" />
+    <ClInclude Include="DPLL.h" />
     <ClInclude Include="funkcje.h" />
     <ClInclude Include="generuj.h" />
+    <ClInclude Include="para.h" />
+    <ClInclude Include="podmianka.h" />
     <ClInclude Include="pojemnik.h" />
+    <ClInclude Include="zliczanie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
