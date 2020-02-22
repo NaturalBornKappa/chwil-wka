@@ -5,7 +5,7 @@
   (matka Ewa Kain)
   (matka Ewa Abel)
   (matka Ewa Set)
-
+)
 
 (defrule reg1
   (ojciec ?x ?y)
@@ -45,5 +45,3 @@
   (assert (spokrew ?y ?x))
   (printout t ?y " jest spokrewniony z " ?x crlf)
 )
-
-
